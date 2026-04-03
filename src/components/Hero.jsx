@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Code, Smartphone, Cloud } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
@@ -46,12 +47,12 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="hero-actions"
         >
-          <button className="primary-btn lg icon-btn">
+          <Link to="/contact" className="primary-btn lg icon-btn">
             Start Your Project <ArrowRight size={20} />
-          </button>
-          <button className="secondary-btn lg">
+          </Link>
+          <Link to="/work" className="secondary-btn lg">
             View Our Work
-          </button>
+          </Link>
         </motion.div>
       </div>
 

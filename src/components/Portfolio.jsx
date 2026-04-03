@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Portfolio.css';
 
 const projects = [
@@ -61,9 +62,9 @@ const Portfolio = () => {
               <div className="portfolio-image-wrapper">
                 <img src={project.image} alt={project.title} className="portfolio-image" />
                 <div className="portfolio-overlay">
-                  <button className="primary-btn icon-btn view-btn">
+                  <Link to="/work" className="primary-btn icon-btn view-btn">
                     View Case Study <ExternalLink size={18} />
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="portfolio-content">
