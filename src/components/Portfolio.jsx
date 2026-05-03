@@ -6,22 +6,25 @@ import './Portfolio.css';
 
 const projects = [
   {
-    title: 'FinTech Dashboard',
+    title: 'Aikyam Ananda School',
+    category: 'Educational Website',
+    image: 'https://image.thum.io/get/width/800/crop/600/https://aikyamanandaschool.vercel.app/',
+    description: 'A modern educational platform with dynamic event tracking and an interactive portfolio.',
+    link: 'https://aikyamanandaschool.vercel.app/'
+  },
+  {
+    title: 'Personal Portfolio',
     category: 'Web Application',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-    description: 'A comprehensive financial analytics dashboard with real-time data visualization.'
+    image: 'https://image.thum.io/get/width/800/crop/600/https://portf-delta-plum.vercel.app/',
+    description: 'A personal portfolio website showcasing projects, skills, and professional experience.',
+    link: 'https://portf-delta-plum.vercel.app/'
   },
   {
-    title: 'HealthCare Portal',
-    category: 'Enterprise Solution',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
-    description: 'Secure patient management system built for a leading healthcare provider.'
-  },
-  {
-    title: 'E-Commerce App',
-    category: 'Mobile Application',
-    image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=800',
-    description: 'A seamless shopping experience with AI-powered product recommendations.'
+    title: 'Food Waste Management',
+    category: 'Sustainability App',
+    image: 'https://image.thum.io/get/width/800/crop/600/https://food-waste-management-topaz.vercel.app/',
+    description: 'A web application dedicated to managing and reducing food waste efficiently.',
+    link: 'https://food-waste-management-topaz.vercel.app/'
   }
 ];
 
@@ -62,9 +65,9 @@ const Portfolio = () => {
               <div className="portfolio-image-wrapper">
                 <img src={project.image} alt={project.title} className="portfolio-image" />
                 <div className="portfolio-overlay">
-                  <Link to="/work" className="primary-btn icon-btn view-btn">
-                    View Case Study <ExternalLink size={18} />
-                  </Link>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="primary-btn icon-btn view-btn">
+                    Visit Website <ExternalLink size={18} />
+                  </a>
                 </div>
               </div>
               <div className="portfolio-content">

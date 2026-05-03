@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Code, Smartphone, Cloud } from 'lucide-react';
+import { ArrowRight, Code, Users, Cloud } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
@@ -65,16 +65,16 @@ const Hero = () => {
         <div className="stat-item">
           <Code className="stat-icon" />
           <div>
-            <h3 className="stat-value">100+</h3>
+            <h3 className="stat-value">2</h3>
             <p className="stat-label">Web Apps Delivered</p>
           </div>
         </div>
         <div className="stat-divider"></div>
         <div className="stat-item">
-          <Smartphone className="stat-icon" />
+          <Users className="stat-icon" />
           <div>
-            <h3 className="stat-value">50+</h3>
-            <p className="stat-label">Mobile Apps Built</p>
+            <h3 className="stat-value">8+</h3>
+            <p className="stat-label">Satisfied Clients</p>
           </div>
         </div>
         <div className="stat-divider"></div>

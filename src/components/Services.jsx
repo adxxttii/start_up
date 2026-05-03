@@ -10,11 +10,6 @@ const servicesData = [
     description: 'We build highly scalable, interactive web applications tailored to your business workflows and goals.'
   },
   {
-    icon: <Smartphone className="service-icon" />,
-    title: 'Mobile App Development',
-    description: 'Native and cross-platform mobile experiences that captivate users and perform seamlessly.'
-  },
-  {
     icon: <Globe className="service-icon" />,
     title: 'Enterprise Software',
     description: 'Modernizing legacy systems and building robust enterprise solutions to drive operational efficiency.'

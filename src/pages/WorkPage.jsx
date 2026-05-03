@@ -14,38 +14,17 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Innovation Client 2',
-    description: 'A sophisticated digital solution showcasing modern aesthetics, vibrant UI design, and responsive layout.',
-    tags: ['E-Commerce', 'Next.js'],
-    link: '#'
+    title: 'Personal Portfolio',
+    description: 'A personal portfolio website showcasing projects, skills, and professional experience with modern web design.',
+    tags: ['Portfolio', 'Web App'],
+    link: 'https://portf-delta-plum.vercel.app/'
   },
   {
     id: 3,
-    title: 'Innovation Client 3',
-    description: 'A sophisticated digital solution showcasing modern aesthetics, vibrant UI design, and responsive layout.',
-    tags: ['Web App', 'Dashboard'],
-    link: '#'
-  },
-  {
-    id: 4,
-    title: 'Innovation Client 4',
-    description: 'A sophisticated digital solution showcasing modern aesthetics, vibrant UI design, and responsive layout.',
-    tags: ['Mobile App', 'FinTech'],
-    link: '#'
-  },
-  {
-    id: 5,
-    title: 'Innovation Client 5',
-    description: 'A sophisticated digital solution showcasing modern aesthetics, vibrant UI design, and responsive layout.',
-    tags: ['Web App', 'Healthcare'],
-    link: '#'
-  },
-  {
-    id: 6,
-    title: 'Innovation Client 6',
-    description: 'A sophisticated digital solution showcasing modern aesthetics, vibrant UI design, and responsive layout.',
-    tags: ['Enterprise', 'SaaS'],
-    link: '#'
+    title: 'Food Waste Management',
+    description: 'A web application dedicated to managing and reducing food waste efficiently with a user-friendly interface.',
+    tags: ['Web App', 'Sustainability'],
+    link: 'https://food-waste-management-topaz.vercel.app/'
   }
 ];
 
@@ -88,7 +67,7 @@ const WorkPage = () => {
               transition={{ delay: 0.1 * index }}
             >
               <div className="project-image-placeholder">
-                {project.id === 1 ? 'Aikyam Ananda' : `Project ${project.id}`}
+                {project.id === 1 ? 'Aikyam Ananda' : project.id === 2 ? 'Portfolio' : project.id === 3 ? 'Food Waste Mgmt' : `Project ${project.id}`}
               </div>
               <div className="project-info">
                 <h3>

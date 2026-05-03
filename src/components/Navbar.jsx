@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="nav-container">
         <a href="#" className="logo">
           <Rocket className="logo-icon" size={28} />
-          <span className="logo-text">Nova<span className="gradient-accent">Tech</span></span>
+          <span className="logo-text">AB Digital <span className="gradient-accent">Solutions</span></span>
         </a>
 
         <div className="desktop-menu">
