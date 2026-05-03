@@ -27,7 +27,7 @@ const Navbar = () => {
           <a href="#services" className="nav-link">Services</a>
           <a href="#portfolio" className="nav-link">Portfolio</a>
           <a href="#about" className="nav-link">About</a>
-          <button className="primary-btn">Let's Talk</button>
+          <a href="#contact" className="primary-btn">Let's Talk</a>
         </div>
 
         <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <a href="#services" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Services</a>
             <a href="#portfolio" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Portfolio</a>
             <a href="#about" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
-            <button className="primary-btn mobile-cta">Let's Talk</button>
+            <a href="#contact" className="primary-btn mobile-cta" onClick={() => setMobileMenuOpen(false)}>Let's Talk</a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -35,10 +35,10 @@ const Footer = () => {
           <div className="footer-links">
             <h4 className="footer-heading">Company</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
+              <li><a href="#about">About Us</a></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
@@ -47,9 +47,9 @@ const Footer = () => {
             <p className="contact-info">
               Ready to transform your ideas into reality? Let's build something extraordinary together.
             </p>
-            <button className="primary-btn icon-btn w-full">
+            <a href="#contact" className="primary-btn icon-btn w-full btn-as-link" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
               <Mail size={18} /> Contact Us
-            </button>
+            </a>
           </div>
         </div>
 
