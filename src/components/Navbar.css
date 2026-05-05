@@ -60,8 +60,13 @@
   transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
+}
+
+.nav-link.active {
+  color: var(--accent); /* or if you prefer a subtle highlight */
 }
 
 .primary-btn {
@@ -104,8 +109,13 @@
   transition: background-color 0.2s ease;
 }
 
-.mobile-nav-link:hover {
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
   background-color: var(--bg-card-hover);
+}
+
+.mobile-nav-link.active {
+  color: var(--accent);
 }
 
 .mobile-cta {

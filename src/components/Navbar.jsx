@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Rocket } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path, hash) => {
+    if (hash) {
+      return location.hash === hash;
+    }
+    return location.pathname === path && !location.hash;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +33,11 @@ const Navbar = () => {
         </a>
 
         <div className="desktop-menu">
-          <a href="#services" className="nav-link">Services</a>
-          <a href="#portfolio" className="nav-link">Portfolio</a>
-          <a href="#about" className="nav-link">About</a>
-          <a href="#contact" className="primary-btn">Let's Talk</a>
+          <Link to="/" className={`nav-link ${isActive('/', '') ? 'active' : ''}`}>Home</Link>
+          <a href="/#services" className={`nav-link ${isActive('/', '#services') ? 'active' : ''}`}>Services</a>
+          <a href="/#portfolio" className={`nav-link ${isActive('/', '#portfolio') ? 'active' : ''}`}>Portfolio</a>
+          <a href="/#about" className={`nav-link ${isActive('/', '#about') ? 'active' : ''}`}>About</a>
+          <a href="/#contact" className={`nav-link ${isActive('/', '#contact') ? 'active' : ''}`}>Contact</a>
         </div>
 
         <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -43,10 +53,11 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             className="mobile-menu glass-panel"
           >
-            <a href="#services" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Services</a>
-            <a href="#portfolio" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Portfolio</a>
-            <a href="#about" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
-            <a href="#contact" className="primary-btn mobile-cta" onClick={() => setMobileMenuOpen(false)}>Let's Talk</a>
+            <Link to="/" className={`mobile-nav-link ${isActive('/', '') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <a href="/#services" className={`mobile-nav-link ${isActive('/', '#services') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Services</a>
+            <a href="/#portfolio" className={`mobile-nav-link ${isActive('/', '#portfolio') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Portfolio</a>
+            <a href="/#about" className={`mobile-nav-link ${isActive('/', '#about') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>About</a>
+            <a href="/#contact" className={`mobile-nav-link ${isActive('/', '#contact') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Contact</a>
           </motion.div>
         )}
       </AnimatePresence>
