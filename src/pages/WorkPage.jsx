@@ -8,6 +8,7 @@ const projects = [
   {
     id: 1,
     title: 'Aikyam Ananda School',
+    image: 'https://aikyamananda.netlify.app/images/Events/Graduation%20Day/graduation%20day%201.jpeg',
     description: 'A beautiful and modern educational website showcasing dynamic events, school portfolio, and essential information featuring rich interactive elements.',
     tags: ['Web App', 'UI/UX', 'React'],
     link: 'https://aikyamanandaschool.vercel.app/'
@@ -66,8 +67,12 @@ const WorkPage = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.1 * index }}
             >
-              <div className="project-image-placeholder">
-                {project.id === 1 ? 'Aikyam Ananda' : project.id === 2 ? 'Portfolio' : project.id === 3 ? 'Food Waste Mgmt' : `Project ${project.id}`}
+              <div className="project-image-placeholder" style={project.image ? { padding: 0, overflow: 'hidden' } : {}}>
+                {project.image ? (
+                  <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                ) : (
+                  project.id === 1 ? 'Aikyam Ananda' : project.id === 2 ? 'Portfolio' : project.id === 3 ? 'Food Waste Mgmt' : `Project ${project.id}`
+                )}
               </div>
               <div className="project-info">
                 <h3>

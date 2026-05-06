@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'Aikyam Ananda School',
     category: 'Educational Website',
-    image: 'https://image.thum.io/get/width/800/crop/600/https://aikyamanandaschool.vercel.app/',
+    image: 'https://aikyamananda.netlify.app/images/Events/Graduation%20Day/graduation%20day%201.jpeg',
     description: 'A modern educational platform with dynamic event tracking and an interactive portfolio.',
     link: 'https://aikyamanandaschool.vercel.app/'
   },

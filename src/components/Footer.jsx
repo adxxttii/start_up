@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="footer-brand">
             <a href="#" className="logo">
               <Rocket className="logo-icon" size={28} />
-              <span className="logo-text">AB Digital <span className="gradient-accent">Solutions</span></span>
+              <span className="logo-text">Odysseus</span>
             </a>
             <p className="footer-desc">
               We design and engineer enterprise-grade software products that enable startups and modern businesses to succeed in the digital era.
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} AB Digital Solutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Odysseus. All rights reserved.</p>
           <div className="footer-legal">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
