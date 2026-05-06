@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Rocket, MessageCircle, Users, Globe, Mail } from 'lucide-react';
 import './Footer.css';
 
@@ -38,7 +39,7 @@ const Footer = () => {
               <li><a href="#about">About Us</a></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
@@ -47,9 +48,9 @@ const Footer = () => {
             <p className="contact-info">
               Ready to transform your ideas into reality? Let's build something extraordinary together.
             </p>
-            <a href="#contact" className="primary-btn icon-btn w-full btn-as-link" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
+            <Link to="/contact" className="primary-btn icon-btn w-full btn-as-link" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
               <Mail size={18} /> Contact Us
-            </a>
+            </Link>
           </div>
         </div>
 

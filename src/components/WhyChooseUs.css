@@ -1,0 +1,195 @@
+.why-choose-us {
+  padding: 8rem 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow: hidden;
+  position: relative;
+}
+
+.wcu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Side - Collage */
+.wcu-collage {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.collage-img {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.collage-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-1 {
+  width: 250px;
+  height: 250px;
+  top: 0;
+  left: 20px;
+  z-index: 2;
+}
+
+.img-2 {
+  width: 180px;
+  height: 180px;
+  top: 220px;
+  left: 180px;
+  z-index: 4;
+}
+
+.img-3 {
+  width: 220px;
+  height: 220px;
+  bottom: 20px;
+  left: 40px;
+  z-index: 2;
+}
+
+.collage-shape {
+  position: absolute;
+  background-color: var(--accent);
+  z-index: 1;
+}
+
+.main-shape {
+  width: 100px;
+  height: 380px;
+  top: 80px;
+  left: 150px;
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+.side-shape {
+  width: 140px;
+  height: 40px;
+  bottom: 200px;
+  left: 150px;
+}
+
+.collage-icon {
+  position: absolute;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.icon-1 {
+  width: 50px;
+  height: 50px;
+  top: 70px;
+  left: 240px;
+}
+
+.icon-2 {
+  width: 60px;
+  height: 60px;
+  top: 320px;
+  left: 360px;
+}
+
+/* Right Side - Content */
+.wcu-content {
+  max-width: 550px;
+  padding-left: 2rem;
+}
+
+.wcu-title {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.wcu-title .serif-italic {
+  font-size: 4.2rem;
+  margin-left: 0.5rem;
+  letter-spacing: normal;
+}
+
+.wcu-description {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.wcu-highlight {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+  line-height: 1.5;
+}
+
+.wcu-features {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.feature-icon {
+  color: var(--accent);
+  background: rgba(255, 0, 170, 0.1);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.feature-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+@media (max-width: 992px) {
+  .wcu-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .wcu-collage {
+    height: 400px;
+    transform: scale(0.7);
+    transform-origin: center center;
+    margin-bottom: -50px;
+  }
+  
+  .wcu-content {
+    padding-left: 0;
+  }
+  
+  .wcu-title {
+    font-size: 2.8rem;
+  }
+  
+  .wcu-title .serif-italic {
+    font-size: 3.2rem;
+  }
+  
+  .wcu-features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

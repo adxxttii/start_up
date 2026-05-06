@@ -37,7 +37,7 @@ const Navbar = () => {
           <a href="/#services" className={`nav-link ${isActive('/', '#services') ? 'active' : ''}`}>Services</a>
           <a href="/#portfolio" className={`nav-link ${isActive('/', '#portfolio') ? 'active' : ''}`}>Portfolio</a>
           <a href="/#about" className={`nav-link ${isActive('/', '#about') ? 'active' : ''}`}>About</a>
-          <a href="/#contact" className={`nav-link ${isActive('/', '#contact') ? 'active' : ''}`}>Contact</a>
+          <Link to="/contact" className={`nav-link ${isActive('/contact', '') ? 'active' : ''}`}>Get in Touch</Link>
         </div>
 
         <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -57,7 +57,7 @@ const Navbar = () => {
             <a href="/#services" className={`mobile-nav-link ${isActive('/', '#services') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Services</a>
             <a href="/#portfolio" className={`mobile-nav-link ${isActive('/', '#portfolio') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Portfolio</a>
             <a href="/#about" className={`mobile-nav-link ${isActive('/', '#about') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>About</a>
-            <a href="/#contact" className={`mobile-nav-link ${isActive('/', '#contact') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            <Link to="/contact" className={`mobile-nav-link ${isActive('/contact', '') ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Get in Touch</Link>
           </motion.div>
         )}
       </AnimatePresence>

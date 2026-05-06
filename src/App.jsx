@@ -6,6 +6,7 @@ import CustomCursor from './components/CustomCursor'
 
 import Home from './pages/Home'
 import WorkPage from './pages/WorkPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<WorkPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </Router>
