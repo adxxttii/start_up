@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Rocket } from 'lucide-react';
+import { Menu, X, Droplets } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
@@ -28,8 +28,8 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#" className="logo">
-          <Rocket className="logo-icon" size={28} />
-          <span className="logo-text">Odysseus</span>
+          <Droplets className="logo-icon" size={28} />
+          <span className="logo-text gradient-text">Odysseus</span>
         </a>
 
         <div className="desktop-menu">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Rocket, MessageCircle, Users, Globe, Mail } from 'lucide-react';
+import { Droplets, MessageCircle, Users, Globe, Mail } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <a href="#" className="logo">
-              <Rocket className="logo-icon" size={28} />
-              <span className="logo-text">Odysseus</span>
+              <Droplets className="logo-icon" size={28} />
+              <span className="logo-text gradient-text">Odysseus</span>
             </a>
             <p className="footer-desc">
               We design and engineer enterprise-grade software products that enable startups and modern businesses to succeed in the digital era.
