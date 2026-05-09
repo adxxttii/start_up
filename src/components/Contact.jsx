@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
@@ -101,16 +101,6 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="info-card glass-panel interactive-card">
-              <div className="info-icon-wrapper">
-                <MapPin className="info-icon" />
-              </div>
-              <div className="info-details">
-                <h3>Visit Us</h3>
-                <p>123 Innovation Drive</p>
-                <p>Tech Valley, CA 94025</p>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div

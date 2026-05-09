@@ -1,0 +1,64 @@
+.carousel-ribbon {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 50%, var(--accent-pink) 100%);
+  color: white;
+  padding: 1.5rem 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  transform: rotate(-2deg); /* slight tilt for aesthetic */
+  margin: 4rem 0; /* space above and below */
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ribbon-track {
+  display: flex;
+  align-items: center;
+  animation: scrollLeft 20s linear infinite;
+  width: max-content;
+}
+
+.ribbon-track:hover {
+  animation-play-state: paused;
+}
+
+.ribbon-item {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 2rem;
+  font-family: var(--font-heading, 'Inter', sans-serif);
+}
+
+.ribbon-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  opacity: 0.8;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Because we duplicated items, moving 50% shifts exactly one set */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-ribbon {
+    padding: 1rem 0;
+    margin: 2rem 0;
+    transform: rotate(0); /* remove tilt on mobile to save space */
+  }
+  
+  .ribbon-item {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+}
