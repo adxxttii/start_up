@@ -11,7 +11,7 @@ const projects = [
     image: 'https://aikyamananda.netlify.app/images/Events/Graduation%20Day/graduation%20day%201.jpeg',
     description: 'A beautiful and modern educational website showcasing dynamic events, school portfolio, and essential information featuring rich interactive elements.',
     tags: ['Web App', 'UI/UX', 'React'],
-    link: 'https://aikyamanandaschool.vercel.app/'
+    link: 'https://aikyamananda.netlify.app/'
   },
   {
     id: 2,
