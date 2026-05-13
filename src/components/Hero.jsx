@@ -19,7 +19,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="badge"
         >
-          Elevating Digital Experiences
+          WE BUILD BEYOND ORDINARY
         </motion.div>
         
         <motion.h1 
@@ -28,8 +28,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="hero-title"
         >
-          We Build <span className="gradient-text">World-Class</span> <br/>
-          Software Solutions
+          We Build <span className="gradient-text">Beyond</span> <br/>
+          Ordinary
         </motion.h1>
         
         <motion.p 
