@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
           </h2>
           
           <p className="wcu-description">
-            At NovaTech, the difference lies in how we work: production-led, AI-enabled, 
+            At Odysseus, the difference lies in how we work: production-led, AI-enabled, 
             and deeply immersed in execution. We move fast, track trends in real 
             time, and turn creative ambition into real, measurable output without 
             losing design integrity.
