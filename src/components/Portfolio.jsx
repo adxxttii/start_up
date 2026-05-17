@@ -13,11 +13,11 @@ const projects = [
     link: 'https://aikyamananda.netlify.app/'
   },
   {
-    title: 'Personal Portfolio',
-    category: 'Web Application',
-    image: 'https://image.thum.io/get/width/800/crop/600/https://portf-delta-plum.vercel.app/',
-    description: 'A personal portfolio website showcasing projects, skills, and professional experience.',
-    link: 'https://portf-delta-plum.vercel.app/'
+    title: 'Class Schedule Autoplanner',
+    category: 'Productivity App',
+    image: '/projects/autoplanner.png',
+    description: 'A smart class scheduling application designed to optimize and automate timetable planning.',
+    link: 'https://class-schedule-lyart.vercel.app/'
   },
   {
     title: 'Food Waste Management',

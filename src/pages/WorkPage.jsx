@@ -15,14 +15,16 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Personal Portfolio',
-    description: 'A personal portfolio website showcasing projects, skills, and professional experience with modern web design.',
-    tags: ['Portfolio', 'Web App'],
-    link: 'https://portf-delta-plum.vercel.app/'
+    title: 'Class Schedule Autoplanner',
+    image: '/projects/autoplanner.png',
+    description: 'A smart class scheduling application designed to optimize and automate timetable planning.',
+    tags: ['Web App', 'Productivity'],
+    link: 'https://class-schedule-lyart.vercel.app/'
   },
   {
     id: 3,
     title: 'Food Waste Management',
+    image: 'https://image.thum.io/get/width/800/crop/600/https://food-waste-management-topaz.vercel.app/',
     description: 'A web application dedicated to managing and reducing food waste efficiently with a user-friendly interface.',
     tags: ['Web App', 'Sustainability'],
     link: 'https://food-waste-management-topaz.vercel.app/'
